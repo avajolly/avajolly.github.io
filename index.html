@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Ava Tran Jolly | Academic Website</title>
-  <meta name="description" content="Academic website, research interests, and projects by Ava Tran Jolly.">
+  <meta name="description"
+        content="Academic website of Ava Tran Jolly, studying Ecology and Evolutionary Biology at UC Santa Barbara.">
 
   <style>
     :root {
-      --green: #466b59;
+      --green: #496b58;
       --text: #303630;
-      --muted: #707970;
-      --line: #e2e7e2;
+      --muted: #737a73;
+      --line: #e4e8e3;
       --background: #ffffff;
-      --soft: #f5f7f4;
     }
 
     * {
@@ -31,33 +32,36 @@
       color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
-      line-height: 1.75;
+      line-height: 1.8;
     }
 
     .container {
-      width: min(900px, 100% - 40px);
+      width: min(820px, calc(100% - 40px));
       margin: 0 auto;
     }
+
+    /* Navigation */
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 24px;
       padding: 22px 0;
       border-bottom: 1px solid var(--line);
     }
 
     .site-name {
       color: var(--text);
-      font-weight: bold;
+      font-weight: 600;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 20px;
     }
 
     a {
@@ -73,113 +77,112 @@
       font-size: 0.92rem;
     }
 
+    /* Introduction */
+
     header {
-      padding: 75px 0 55px;
+      padding: 78px 0 62px;
     }
 
     .eyebrow {
+      margin-bottom: 12px;
       color: var(--green);
       font-size: 0.82rem;
-      font-weight: bold;
+      font-weight: 600;
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
-    h1 {
-      margin: 8px 0;
+    h1,
+    h2 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.5rem, 7vw, 4rem);
       font-weight: normal;
-      line-height: 1.15;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 3.8rem);
+      line-height: 1.2;
+      letter-spacing: -0.035em;
     }
 
     .subtitle {
-      margin-top: 12px;
+      margin: 16px 0 0;
       color: var(--muted);
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
 
     .intro {
       max-width: 680px;
-      margin-top: 25px;
+      margin-top: 28px;
     }
 
+    /* Main sections */
+
     .section {
-      padding: 30px 0;
+      padding: 36px 0;
       border-top: 1px solid var(--line);
       scroll-margin-top: 20px;
     }
 
     h2 {
-      margin-top: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.8rem;
-      font-weight: normal;
+      margin: 0 0 18px;
+      font-size: 1.85rem;
     }
 
-    h3 {
-      margin-bottom: 4px;
-      font-size: 1.05rem;
+    p {
+      margin: 0 0 16px;
     }
 
     .muted {
       color: var(--muted);
-      font-size: 0.94rem;
     }
 
-    .research-tags {
+    .interests {
       display: flex;
       flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 18px;
+      gap: 10px;
+      margin-top: 20px;
     }
 
-    .tag {
+    .interest {
       padding: 5px 12px;
-      border-radius: 4px;
-      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 3px;
       color: var(--green);
       font-size: 0.9rem;
     }
 
-    .project {
-      margin: 22px 0;
-      padding: 0 0 18px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .project:last-child {
-      border-bottom: 0;
-    }
-
-    .button-link {
+    .cv-link {
       display: inline-block;
-      margin-top: 8px;
-      padding: 9px 15px;
+      margin-top: 4px;
+      padding: 9px 16px;
       border: 1px solid var(--green);
-      border-radius: 4px;
+      border-radius: 3px;
     }
+
+    /* Footer */
 
     footer {
-      margin-top: 25px;
-      padding: 25px 0 40px;
+      margin-top: 22px;
+      padding: 24px 0 36px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 0.88rem;
     }
 
-    @media (max-width: 560px) {
+    @media (max-width: 580px) {
       nav {
         align-items: flex-start;
         flex-direction: column;
-      }
-
-      header {
-        padding: 48px 0 35px;
+        gap: 12px;
       }
 
       .nav-links {
-        gap: 14px;
+        gap: 12px 18px;
+      }
+
+      header {
+        padding: 52px 0 42px;
       }
     }
   </style>
@@ -190,119 +193,122 @@
 
     <nav>
       <a class="site-name" href="#home">Ava Tran Jolly</a>
+
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
         <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
     <header id="home">
-      <div class="eyebrow">Academic Profile</div>
+      <div class="eyebrow">Academic Website</div>
+
       <h1>Ava Tran Jolly</h1>
-      <div class="subtitle">
-        Graduate Student Researcher · University of California, Santa Barbara
-      </div>
+
+      <p class="subtitle">
+        Ecology &amp; Evolutionary Biology<br>
+        University of California, Santa Barbara
+      </p>
 
       <div class="intro">
         <p>
-          Welcome to my academic website. I am interested in
-          understanding the natural world through scientific
-          research, data analysis, and experimentation.
+          Welcome to my academic website. I study Ecology and
+          Evolutionary Biology at the University of California,
+          Santa Barbara.
         </p>
+
         <p>
-          This website shares my research interests, current
-          projects, academic experience, and selected work.
+          This website provides an overview of my academic
+          background, research interests, and experience.
         </p>
       </div>
     </header>
 
     <main>
+
       <section class="section" id="about">
         <h2>About Me</h2>
+
         <p>
-          Write a short biography here. Introduce your academic
-          background, what you study, and the questions that
-          interest you most.
+          Write a short introduction about yourself here.
+          You might describe your academic background, what
+          led you to study ecology and evolution, and the
+          scientific questions that interest you.
         </p>
+
         <p>
-          You can also mention relevant coursework, fieldwork,
-          laboratory experience, or research skills.
+          You can also include relevant coursework, fieldwork,
+          laboratory experience, or other academic activities.
         </p>
       </section>
 
       <section class="section" id="research">
         <h2>Research Interests</h2>
+
         <p>
-          Describe the broader scientific questions you want
-          to investigate and why they matter.
+          My research interests include:
         </p>
 
-        <div class="research-tags">
-          <span class="tag">Ecology</span>
-          <span class="tag">Evolution</span>
-          <span class="tag">Plant Biology</span>
-          <span class="tag">Data Analysis</span>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <h2>Research & Projects</h2>
-
-        <div class="project">
-          <h3>Project Title One</h3>
-          <div class="muted">Research project · Year</div>
-          <p>
-            Explain the research question, methods, and main
-            findings or goals in a few sentences.
-          </p>
-          <!-- Add a project link here when available. -->
+        <div class="interests">
+          <span class="interest">Ecology</span>
+          <span class="interest">Evolution</span>
+          <span class="interest">Plant Biology</span>
+          <span class="interest">Your Interest</span>
         </div>
 
-        <div class="project">
-          <h3>Project Title Two</h3>
-          <div class="muted">Coursework or independent project · Year</div>
-          <p>
-            Describe another project, report, field study,
-            or data analysis project.
-          </p>
-        </div>
+        <p style="margin-top: 22px;">
+          Add a few sentences describing the research questions
+          you are interested in exploring and why they matter.
+        </p>
       </section>
 
       <section class="section" id="cv">
-        <h2>CV & Experience</h2>
+        <h2>Curriculum Vitae</h2>
+
         <p>
-          Summarize your education, research experience,
-          relevant skills, awards, and presentations.
+          My CV provides an overview of my education,
+          research experience, skills, and other academic
+          qualifications.
         </p>
-        <p>
-          <a href="cv.pdf">View my CV (PDF)</a>
-        </p>
-        <p class="muted">
-          Upload your CV as a file named cv.pdf in the
-          main repository folder for this link to work.
+
+        <a class="cv-link" href="cv.pdf">
+          View CV (PDF) &rarr;
+        </a>
+
+        <p class="muted" style="margin-top: 14px; font-size: 0.88rem;">
+          Upload your CV as a PDF named cv.pdf to the main
+          folder of this GitHub repository to activate this link.
         </p>
       </section>
 
       <section class="section" id="contact">
         <h2>Contact</h2>
+
         <p>
-          Email:
-          <a href="mailto:avajolly@ucsb.edu">
-            avajolly@ucsb.edu
+          For academic inquiries, you can reach me at:
+        </p>
+
+        <p>
+          <a href="mailto:your.email@example.com">
+            your.email@example.com
           </a>
         </p>
+
         <p>
-          <a href="https://github.com/">GitHub</a>
-          <!-- Add other professional profile links here. -->
+          <a href="https://github.com/">
+            GitHub
+          </a>
         </p>
       </section>
+
     </main>
 
     <footer>
-      © 2026 Ava Tran Jolly · Academic Website
+      <p>
+        &copy; 2026 Ava Tran Jolly
+      </p>
     </footer>
 
   </div>
