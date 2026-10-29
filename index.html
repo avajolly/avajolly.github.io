@@ -165,15 +165,6 @@
       border-bottom: none;
     }
 
-    .section-label {
-      margin: 0 0 12px;
-      color: var(--green);
-      font-size: 11px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
     h2 {
       margin: 0 0 22px;
       font-size: 36px;
@@ -220,15 +211,16 @@
       font-weight: bold;
     }
 
+    /* Smaller CV box that fits around the button */
     .cv-box {
-      padding: 28px;
+      display: inline-block;
+      padding: 8px 12px;
       background: var(--sage);
       border-radius: 4px;
     }
 
     .button-link {
       display: inline-block;
-      margin-top: 8px;
       padding: 11px 19px;
       background: var(--forest);
       color: white;
@@ -245,6 +237,7 @@
     .contact-links {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 22px;
       margin-top: 18px;
     }
@@ -384,7 +377,6 @@
 
       <div class="media-list">
 
-        <!-- MEDIA ARTICLE 1: Copy this entire block to add another article. -->
         <article class="media-item">
           <p class="media-type">Article</p>
 
@@ -405,7 +397,6 @@
           </a>
         </article>
 
-        <!-- MEDIA ARTICLE 2: Duplicate this block for more articles. -->
         <article class="media-item">
           <p class="media-type">Interview</p>
 
@@ -434,7 +425,6 @@
       <div class="contact-links">
         <span class="contact-email">avajolly@ucsb.edu</span>
 
-       
         <a
           href="https://www.linkedin.com/in/ava-tran-jolly/"
           target="_blank"
@@ -443,14 +433,13 @@
           LinkedIn
         </a>
 
- <a
+        <a
           href="https://oono-lab.eemb.ucsb.edu/people/ava-t-jolly"
           target="_blank"
           rel="noopener noreferrer"
         >
           Lab Profile
         </a>
-        
       </div>
     </section>
 
