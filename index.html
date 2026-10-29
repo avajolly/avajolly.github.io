@@ -109,15 +109,6 @@
       min-width: 0;
     }
 
-    .eyebrow {
-      margin: 0 0 18px;
-      color: var(--green);
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
     h1,
     h2,
     h3 {
@@ -258,6 +249,10 @@
       margin-top: 18px;
     }
 
+    .contact-email {
+      color: var(--text);
+    }
+
     footer {
       padding: 25px 8%;
       background: var(--forest);
@@ -312,8 +307,8 @@
 
     <div class="nav-links">
       <a href="#about">About Me</a>
-      <a href="#media">Media</a>
       <a href="#cv">CV</a>
+      <a href="#media">Media</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -322,8 +317,6 @@
     <div class="hero-layout">
 
       <div class="hero-content">
-        <p class="eyebrow">Ecology · Evolution · Plant Biology</p>
-
         <h1>Ava Tran Jolly</h1>
 
         <p class="subtitle">
@@ -371,6 +364,17 @@
         Outside of research, I enjoy learning about the natural world
         and exploring the connections between ecology and evolution.
       </p>
+    </section>
+
+    <section id="cv">
+      <p class="section-label">Experience & education</p>
+      <h2>Curriculum Vitae</h2>
+
+      <div class="cv-box">
+        <a class="button-link" href="cv.pdf" target="_blank">
+          View CV →
+        </a>
+      </div>
     </section>
 
     <section id="media">
@@ -427,24 +431,6 @@
       </div>
     </section>
 
-    <section id="cv">
-      <p class="section-label">Experience & education</p>
-      <h2>Curriculum Vitae</h2>
-
-      <div class="cv-box">
-        <h3>Academic CV</h3>
-
-        <p>
-          View my academic background, research experience,
-          teaching experience, and other professional activities.
-        </p>
-
-        <a class="button-link" href="cv.pdf" target="_blank">
-          View CV →
-        </a>
-      </div>
-    </section>
-
     <section id="contact">
       <p class="section-label">Get in touch</p>
       <h2>Contact</h2>
@@ -455,7 +441,7 @@
       </p>
 
       <div class="contact-links">
-        <a href="mailto:YOUR-EMAIL@example.com">Email</a>
+        <span class="contact-email">YOUR-EMAIL@example.com</span>
 
         <a
           href="https://github.com/YOUR-USERNAME"
